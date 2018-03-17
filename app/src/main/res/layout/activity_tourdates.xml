@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.abhi.rajasthantourplan.tourdates">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="20dp">
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calendarView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:mcv_showOtherDates="all"
+        app:mcv_selectionColor="#00F"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:weightSum="3">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Start Date"
+                android:layout_weight="1"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="20dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textSize="25dp"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+
+                android:textSize="20dp"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="End Date"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:weightSum="3">
+    <TextView
+        android:id="@+id/startdate"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"
+        android:background="@drawable/textfielddesign"
+        android:textSize="20dp"
+        android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="-"
+            android:textSize="25dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/enddate"
+            android:textSize="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/textfielddesign"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
